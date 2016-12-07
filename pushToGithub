@@ -5,16 +5,19 @@ echo "1. push"
 git pull;
 echo ""
 
-echo "2. add *"
+echo "2. git status"
+git status
+
+echo "3. add *"
 git add *;
 echo ""
 
-echo "3. commit local changes"
+echo "4. commit local changes"
 git commit -m "update at: `date`";
 echo ""
 
-echo "4. pushing"
+echo "5. pushing"
 git push
 echo ""
 
-echo "Done!"
+echo "Done!🍻"
