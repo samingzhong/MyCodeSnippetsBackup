@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# 重新备份至GitHub前跑一下此脚本。增量备份
+
+#cd "$pwd"
+# copy CodeSnippets from Xcode.
+
+echo "copy all the *.codesnippet files
+	from: "~/Library/Developer/Xcode/UserData/CodeSnippets/"
+	to: $(pwd) ..."
+# 不覆盖式拷贝 -n
+cd `dirname $0`
+cp -n ~/Library/Developer/Xcode/UserData/CodeSnippets/* $(pwd)
+echo "copy done!"
