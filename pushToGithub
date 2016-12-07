@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "pushing local changes to github repo..."
+cd `dirname $0`
+git pull;
+git add *;
+git commit -m "update at: `date`";
+git push
+echo "Done!"
