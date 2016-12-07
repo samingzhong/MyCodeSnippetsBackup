@@ -12,8 +12,14 @@ echo "3. add *"
 git add *;
 echo ""
 
-echo "4. commit local changes"
-git commit -m "update at: `date`";
+echo "4. 手动输入提交日志?（选择n的话，提交日志为系统日期） y/n:"
+read choice
+message=`date`
+if [[ $choice == y ]]; then
+	echo -n "输入提交日志:"
+	read message
+fi
+git commit -m "$message";
 echo ""
 
 echo "5. pushing"
