@@ -5,15 +5,6 @@ echo "1. push"
 git pull;
 echo ""
 
-# echo "2. git status"
-# gitStatus=`git status`
-# echo $gitStatus|grep "Changes not staged for commit"
-# if [[ $? == 0 ]]; then
-# 	echo "本地有变更，但是变更还没有被存储起来，需要即将执行git add。。。"
-# else 
-# 	echo "暂无"
-# fi
-
 echo "2. add *"
 git add *
 
